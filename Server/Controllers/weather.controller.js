@@ -1,7 +1,7 @@
 const axios = require("axios");
 const { isNameValid } = require("../functions/nameValidation");
 const { config } = require("../config");
-const { getForecastArray } = require("../functions/extractForecast");
+const { getFormattedForecast } = require("../functions/formatWeather");
 const weatherApiUrl = "https://api.weatherapi.com/v1/forecast.json";
 
 const getWeather = async (req, res) => {
@@ -14,8 +14,9 @@ const getWeather = async (req, res) => {
     const weatherResp = await axios.get(
       `${weatherApiUrl}?q=${city}&key=${config.WEATHER_API_KEY}&days=2`
     );
+    const formattedForecast = getFormattedForecast(weatherResp.data);
 
-    return res.send(weatherResp.data);
+    return res.send(formattedForecast);
   } catch (error) {
     console.error(error);
     res.status(400).send("Error");

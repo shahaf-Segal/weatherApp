@@ -1,5 +1,5 @@
-function getCurrentAndNextFourHours() {
-  const now = new Date();
+function getCurrentAndNextFourHours(local_time) {
+  const now = new Date(local_time);
 
   // Round down to the nearest hour
   now.setMinutes(0, 0, 0);
@@ -30,6 +30,8 @@ function findMatchingTimes(forecastObjectArray, timeArray) {
 }
 
 const getForecastArray = (weatherObj) => {
+  const { localtime } = weatherObj.location;
+
   let forecastHours = [];
   weatherObj.forecast.forecastday.forEach(({ hour }) => {
     forecastHours = [...forecastHours, ...hour];
@@ -39,7 +41,7 @@ const getForecastArray = (weatherObj) => {
   });
   return findMatchingTimes(
     forecastHoursFormatted,
-    getCurrentAndNextFourHours()
+    getCurrentAndNextFourHours(localtime)
   );
 };
 
