@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 25px;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 .intro-text {

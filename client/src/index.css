@@ -1,6 +1,8 @@
 /**colors*/
 :root {
   --background-color: #f1f1f1;
+  --background-color-cyan-light: #dde4e6;
+  --background-color-cyan: #27737d;
   --button-color: #046b3b;
   --white-color: #ffffff;
   --text-color-light: #707070;
