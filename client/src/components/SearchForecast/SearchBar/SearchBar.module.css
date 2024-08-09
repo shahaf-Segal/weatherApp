@@ -1,0 +1,27 @@
+.search-bar {
+  display: flex;
+  background-color: var(--white-color);
+  max-width: 250px;
+  padding: 5px;
+  gap: 5px;
+  border-radius: 10px;
+}
+.search-input-container {
+  flex-grow: 1;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+}
+.search-btn-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.search-btn {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--white-color);
+}
