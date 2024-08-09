@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { SERVER_URL } from "../../../Constant/serverUrl";
+import ForecastCard from "../../ForecastCard/ForecastCard";
 import SearchForecast from "../../SearchForecast/SearchForecast";
 import styles from "./ForecastPage.module.css";
 
@@ -23,7 +24,8 @@ function ForecastPage() {
       <SearchForecast
         searchFunc={fetchForecastData}
         locationData={forecastData?.location}
-      ></SearchForecast>
+      />
+      <ForecastCard forecastData={forecastData} />
     </div>
   );
 }

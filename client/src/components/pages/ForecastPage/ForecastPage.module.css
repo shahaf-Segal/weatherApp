@@ -5,4 +5,5 @@
   max-height: calc(100vh - 12vmin);
   height: 100vh;
   display: flex;
+  gap: 10px;
 }
