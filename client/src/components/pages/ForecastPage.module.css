@@ -1,0 +1,6 @@
+.forecast-container {
+  background-color: var(--background-color);
+  padding: 10vmin;
+  flex-grow: 1;
+  height: 100vh;
+}
