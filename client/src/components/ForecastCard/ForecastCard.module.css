@@ -1,0 +1,17 @@
+.forecast-card-container {
+  background-color: var(--background-color-cyan-light);
+  padding: 5vh 5vw;
+  border-radius: 10px;
+  width: 50%;
+}
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  gap: 20px;
+  background-color: var(--background-color-cyan);
+  width: calc(100% - 10px);
+  height: 100%;
+  border-radius: 25px;
+}

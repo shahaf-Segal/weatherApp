@@ -1,0 +1,11 @@
+.weather-status {
+  color: var(--white-color);
+  text-align: center;
+}
+.temp-text {
+  font-size: 80px;
+  font-weight: 700;
+}
+.condition-text {
+  color: var(--text-color-cyan-light);
+}
