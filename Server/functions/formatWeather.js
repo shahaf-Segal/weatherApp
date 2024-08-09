@@ -21,6 +21,7 @@ const getFormattedForecast = (weatherForecastObj) => {
     country: location.country,
     lat: location.lat,
     lon: location.lon,
+    localtime: location.localtime,
   };
   const newCurrent = getCurrentFromWeather(weatherForecastObj);
 
