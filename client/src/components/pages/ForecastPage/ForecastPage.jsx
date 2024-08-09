@@ -1,6 +1,5 @@
-import React from "react";
-import Logo from "../Logo/Logo";
-import SearchForecast from "../SearchForecast/SearchForecast";
+import Logo from "../../Logo/Logo";
+import SearchForecast from "../../SearchForecast/SearchForecast";
 import styles from "./ForecastPage.module.css";
 
 function ForecastPage() {
