@@ -1,0 +1,15 @@
+.search-forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+.logo-container {
+  align-self: baseline;
+}
+.search-inner-container {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
