@@ -1,6 +1,12 @@
 /**colors*/
 :root {
   --background-color: #f1f1f1;
+  --button-color: #046b3b;
+  --white-color: #ffffff;
+  --text-color-light: #707070;
+  --text-color-dark: #363636;
+  --text-color-cyan-light: #e8f1f2;
+  --text-color-cyan: #a8c6cb;
   font-family: "Heebo";
 }
 @font-face {
