@@ -1,10 +1,10 @@
 import "./App.css";
-import Logo from "./components/Logo/Logo";
+import ForecastPage from "./components/pages/ForecastPage";
 
 function App() {
   return (
     <>
-      <Logo></Logo>
+      <ForecastPage />
     </>
   );
 }
