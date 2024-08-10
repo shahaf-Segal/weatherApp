@@ -8,10 +8,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 5px;
-  gap: 20px;
+  gap: 50px;
   background-color: var(--background-color-cyan);
   width: calc(100% - 10px);
   height: 100%;
   border-radius: 25px;
+}
+
+.weather-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 50px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .forecast-card-container {
+    width: calc(100% - 10vw);
+    height: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 50%;
+  }
+  .forecast-card {
+    gap: 20px;
+    flex-grow: 1;
+  }
 }

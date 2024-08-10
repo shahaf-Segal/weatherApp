@@ -9,3 +9,9 @@
 .condition-text {
   color: var(--text-color-cyan-light);
 }
+
+@media screen and (max-width: 600px) {
+  .temp-text {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,30 @@
+.forecast-bar {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.forecast-bar-parts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color-cyan-light);
+  gap: 10px;
+  min-width: 50px;
+}
+
+.forecast-title {
+  color: var(--text-color-cyan);
+}
+@media screen and (max-width: 600px) {
+  .forecast-bar {
+    gap: 10px;
+  }
+  .forecast-bar-parts {
+    min-width: 35px;
+  }
+}

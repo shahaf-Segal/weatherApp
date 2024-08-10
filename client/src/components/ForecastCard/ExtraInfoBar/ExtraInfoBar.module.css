@@ -1,0 +1,30 @@
+.extra-info-bar {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.extra-info-bar-parts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color-cyan-light);
+  gap: 10px;
+  min-width: 100px;
+}
+
+.extra-info-title {
+  color: var(--text-color-cyan);
+}
+
+@media screen and (max-width: 600px) {
+  .extra-info-bar {
+    gap: 15px;
+  }
+  .extra-info-bar-parts {
+    min-width: max-content;
+  }
+}

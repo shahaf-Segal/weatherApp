@@ -7,3 +7,12 @@
   display: flex;
   gap: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .forecast-container {
+    flex-direction: column;
+    height: max-content;
+    max-height: max-content;
+    min-height: calc(100vh - 12vmin);
+  }
+}
