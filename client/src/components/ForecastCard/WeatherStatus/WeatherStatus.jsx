@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./WeatherStatus.module.css";
 
 function WeatherStatus({ temp, condition }) {
