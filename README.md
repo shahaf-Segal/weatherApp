@@ -16,14 +16,10 @@ To get started with the Phone Directory Server, you need to have Node.js and npm
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/phone-directory-server.git
+   git clone https://github.com/shahaf-Segal/weatherApp.git
    ```
 
 2. Navigate to the project directory:
-
-   ```sh
-   cd phone-directory-server
-   ```
 
 3. Install the dependencies:
 
@@ -31,12 +27,11 @@ To get started with the Phone Directory Server, you need to have Node.js and npm
    npm install
    ```
 ## Setup
-1. To Run the Server it must have A reachable DB , the .env file should contain this:
+1. To Run the Server it must have A reachable Api key for weatherAPI , the .env file should contain this:
    
    ```sh
-   MONGO_URL=<Mongo_Url>
+   WEATHER_API_KEY=<weatherAPI_Key>
    ```
-   
     
 
 ## Running the Production Server
@@ -49,7 +44,7 @@ To start the server in production mode:
    npm start
    ```
 
-   The server will be running on the specified port (default is `211`).
+   The server will be running on the specified port (default is `2105`).
 
 
 ## Installation
